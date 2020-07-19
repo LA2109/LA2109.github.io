@@ -1,0 +1,304 @@
+<html>
+  <head>
+  <title>HOW TO BASIC</title>
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="effect.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>body,
+        html {
+          margin: 0;
+          padding: 0;
+        }
+        nav {
+          margin: 0px 0px;
+          border:1px solid black;
+          padding: 10px 2px;
+          background: #1e88e5;
+        }
+        nav a.brand {
+          text-decoration: none;
+          font-size: 25px;
+          font-family: "Dancing Script", sans-serif;
+          color: #fff;
+          font-weight: bold;
+          margin-left: 10px;
+        }
+        nav a.brand:hover {
+          text-decoration: none;
+          color: #bbdefb;
+        }
+        nav div.list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .item1,
+        .item2,
+        .item3 {
+          background-color: #1e88e5;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        .item1:hover,
+        .item2:hover,
+        .item3:hover {
+          background-color: #2196f3;
+          color: #bbdefb;
+        }
+        .menu,
+        .m1 {
+          position: relative;
+          display: inline-block;
+        }
+        .submenu1,
+        .submenu2,
+        .submenu3 {
+          display: none;
+          position: absolute;
+          background-color: #1e88e5;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+        .submenu1 a,
+        .submenu2 a,
+        .submenu3 a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        .submenu1 a:hover,
+        .submenu2 a:hover,
+        .submenu3 a:hover {
+          background-color: #2196f3;
+          text-decoration: none;
+          color: #bbdefb;
+        }
+        
+        #sec-1 {
+          background: url("https://miro.medium.com/max/3834/1*ok9Wy5035HImw_BgFLycBQ.png")
+            no-repeat center center;
+          background-size: cover;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          margin-top: 0px;
+          height: 450px;
+          width: 100%;
+        }
+        #sec-1 .size {
+          color: #1e88e5;
+        }
+        #sec-1 h2,
+        #sec-1 p {
+          display: inline-block;
+          background: #fff;
+          padding: 2px 6px;
+        }
+        
+        .intro {
+          max-width: 1400px;
+          border:1px solid black;
+          text-align: center;
+        }
+        .intro a {
+          text-decoration: none;
+          font-size: 25px;
+        }
+        .intro a:hover {
+          color: #1e88e5;
+          text-decoration: none;
+        }
+        
+        .img-div {
+          width: 98%;
+          max-width: 100%;
+          display: block;
+          height: auto;
+          margin: auto;
+          background:white;
+        }
+        .image img {
+          max-width: 100%;
+          /*this is the only way to make image responsive inside the flexbox*/
+          margin: auto;
+          display: block;
+          border:2px solid #fff;
+        }
+        .image {
+          /*responsive*/
+          max-width: 99%;
+          height: auto;
+          /* */
+          /*centerized*/
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          /* */
+        }
+        
+        .bg-custom {
+          background: #1e88e5;
+        }
+        #foot {
+          text-align: center;
+          color: #fff;
+        }
+        
+        #foot a.tit {
+          margin: 30px 0px;
+          color: #fff;
+          border:1px solid black;
+          text-decoration: none;
+          font-size: 25px;
+        }
+        .social a {
+          font-size: 50px;
+          color: #fff;
+          margin: 20px 45px;
+        }
+        #foot a:hover {
+          color: #bbdefb;
+        }
+        #foot p {
+          padding: 10px 2px;
+        }
+        .social {
+          margin: 10px 0px;
+        }
+        
+        @media (min-width: 661px) {
+          nav > div {
+            float: right;
+            margin-top: -10px;
+          }
+          nav div.menu {
+            margin-right: 75px;
+          }
+        }
+        @media (max-width: 660px) {
+          nav a.brand {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            margin: 5px 0px;
+          }
+        }
+        @media (max-width: 455px) {
+          .submenu1,
+          .submenu2,
+          .submenu3 {
+            min-width: 122px;
+            font-size: 15px;
+          }
+          .social a {
+            margin: 10px 25px;
+          }
+        }
+        @media (max-width: 365px) {
+          .submenu1,
+          .submenu2,
+          .submenu3 {
+            font-size: 13px;
+            min-width: 95px;
+          }
+          #sec-1 h2 {
+            font-size: 27px;
+          }
+        }
+        </style>
+</head>
+  <body>
+    <header id="header">
+     <nav>
+         <a class="brand"href="#">How to basic</a>
+         <div class="list">
+           <div class="m1">
+          <div class="item3">Course &#x25BE;</div>
+          <div class="submenu3">    
+            <a href="#">View Course</a>
+            <a href="#">Saved Course</a>
+          </div>
+        </div> 
+           <div class="m1">
+          <div class="item2">Account &#x25BE;</div>
+          <div class="submenu2">
+            <a href="#">View Account</a>
+            <a href="#">Check Course Status</a>
+            <a href="#">Sign in</a>
+          </div>
+        </div> 
+           <div class="menu">
+              <div class="item1">Help &#x25BE;</div>
+              <div class="submenu1">
+                <a href="#">FAQs</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Privacy and cookies</a>
+              </div>
+        </div> 
+        </div>
+        
+        
+      </nav>
+      </header>
+    <section id="sec-1">
+      <div class="container-fluid jumbotron-fluid d-flex flex-column justify-content-center align-items-center">
+       </div>
+      </section> 
+      <section>
+        <div class="container">
+          <h2>Our students achieve:</h2>  
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="https://cdn.britannica.com/s:800x450,c:crop/40/189440-138-4637CAAC/video-Los-Angeles.jpg" alt="Los Angeles" style="width:100%;height: 600px;">
+              </div>
+        
+              <div class="item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Los_Angeles%2C_Winter_2016.jpg" alt="Chicago" style="width:100%;height: 600px;">
+              </div>
+            
+              <div class="item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/20190616154621%21Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg" alt="New york" style="width:100%;height: 600px;">
+              </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        </section>
+  </body>
+</html>
